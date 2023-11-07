@@ -15,6 +15,3 @@ Currently working in the field of adaptive data analysis, with implications to t
 I'm also a Research Assistant of Prof. Gil Kalai at at the Reichman University, Herzliya, where I work on statistical aspects of experimenting with quantum computers, and mainly on the Google supremacy claim made in 2019.
 
 My PhD advisors are Katrina Ligett and Yosef Rinott.
-
-======================
-Selected publications
