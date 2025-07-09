@@ -2,9 +2,10 @@
 title: "67518-ِApplied Data Privacy"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/Applied_DP
 venue: "The Hebrew University of Jerusalem, CS department"
-date: 2024-2026, Winter semester
+date: 2024-11-01
+semester: "Winter semester 2024-2026"
 location: "Jerusalem, Israel"
 ---
 
