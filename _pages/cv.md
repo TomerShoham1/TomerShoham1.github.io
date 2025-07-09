@@ -27,19 +27,16 @@ Education
 Work Experience
 ======
 **Research Assistant**, Prof. Gil Kalai & Prof. Yosef Rinott, HUJI, Mar 2019 – Present  
-- Studying statistical aspects of Google’s quantum supremacy demonstration.  
-- One paper accepted to *Statistical Science*, second in progress.
+- Studying statistical aspects of Google’s quantum supremacy demonstration.
 
 **Research Assistant**, Statistical Consulting Lab, HUJI, May 2019 – Apr 2023  
-- Interdisciplinary research with Maccabi Healthcare Services and Hadassah Medical Center on environmental exposures and fetal growth.  
-- Poster at ISEE2020; paper published in *Sci. Total Environ.*, 2023.
+- Interdisciplinary research with Maccabi Healthcare Services and Hadassah Medical Center on environmental exposures and fetal growth.
 
 **Statistical Consultant**, MAYA Analytics – SAS, Aug 2019 – Apr 2020  
-- Consultant to the Ministry of Finance; led various ML projects.
+- Consultant to the Ministry of Finance; led various projects.
 
 **Data Analyst**, Ministry of Finance, Nov 2017 – July 2019  
-- Statistical analysis of HR and wage data (BI tools, R, SPSS, SAS).  
-- Prepared formal reviews and reports for Knesset and press.
+- Statistical analysis of HR and wage data (BI tools, R, SPSS, SAS).
 
 Professional Memberships
 ======
@@ -48,13 +45,11 @@ Professional Memberships
 
 **Center for Interdisciplinary Data Science Research (CIDR)**, Oct 2020 – Present
 
-
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-
 
 Teaching
 ======
