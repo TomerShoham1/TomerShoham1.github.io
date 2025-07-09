@@ -38,27 +38,27 @@
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-<!--        {% if post.collection == 'teaching' %}-->
-<!--          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>-->
-<!--        {% elsif post.collection == 'publications' %}-->
-<!--          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>-->
-<!--        {% elsif post.date %}-->
-<!--         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>-->
-<!--        {% endif %}-->
-
         {% if post.collection == 'teaching' %}
-      <p>
-        {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>
-        {% if post.years_taught %}
-          <strong>Years taught:</strong> {{ post.years_taught }}<br>
+          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' %}
+          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.date %}
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if post.semester %}
-          <strong>Semester:</strong> {{ post.semester }}<br>
-        {% endif %}
-        {% if post.location %}
-          <strong>Location:</strong> {{ post.location }}
-        {% endif %}
-      </p>
+
+<!--        {% if post.collection == 'teaching' %}-->
+<!--      <p>-->
+<!--        {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>-->
+<!--        {% if post.years_taught %}-->
+<!--          <strong>Years taught:</strong> {{ post.years_taught }}<br>-->
+<!--        {% endif %}-->
+<!--        {% if post.semester %}-->
+<!--          <strong>Semester:</strong> {{ post.semester }}<br>-->
+<!--        {% endif %}-->
+<!--        {% if post.location %}-->
+<!--          <strong>Location:</strong> {{ post.location }}-->
+<!--        {% endif %}-->
+<!--      </p>-->
 
 
     {% if post.excerpt and site.read_more != 'enabled' %}
