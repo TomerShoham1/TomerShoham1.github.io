@@ -1,3 +1,4 @@
+---
 title: "67518-ِApplied Data Privacy"
 collection: teaching
 type: "Undergraduate course"
