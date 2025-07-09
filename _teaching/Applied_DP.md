@@ -5,10 +5,11 @@ type: "Graduate course"
 permalink: /teaching/Applied_DP
 venue: "The Hebrew University of Jerusalem, CS department"
 date: 2024-11-01
+years_taught: "2024-2025, 2025-2026"
 location: "Jerusalem, Israel"
 ---
 
-We developed a course on differential privacy, using applied exercises to teach the theoretical concepts. The course is designed for undergraduate students in computer science and statistics, focusing on practical applications of differential privacy in data analysis and machine learning.
+We developed a course on differential privacy, using applied exercises to teach the theoretical concepts. The course is designed for graduate students in computer science, focusing on practical applications of differential privacy in data analysis and machine learning.
 
 Course outline:
 ======
