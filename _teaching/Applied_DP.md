@@ -5,7 +5,7 @@ type: "Graduate course"
 permalink: /teaching/Applied_DP
 venue: "The Hebrew University of Jerusalem, CS department"
 date: 2024-11-01
-years_taught: "24-25, 25-26"
+years_taught: "Years taught: 24-25, 25-26"
 location: "Jerusalem, Israel"
 ---
 
