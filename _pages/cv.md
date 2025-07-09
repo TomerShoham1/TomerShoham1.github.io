@@ -9,8 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-## Education
-
+Education
+======
 **PhD in Computer Science**, The Hebrew University of Jerusalem, 2027 (expected) 
 - Statistical analysis and differential privacy.  
 - Advisors: Prof. Katrina Ligett (CS) & Prof. Yosef Rinott (Statistics & Data Science).
@@ -23,8 +23,9 @@ redirect_from:
 **BA in Economics & Statistics**, HUJI, Oct 2015 – Aug 2018
 - Graduated with honors; Dean’s honor list (2016-2018).
 
----
-## Work Experience
+
+Work Experience
+======
 **Research Assistant**, Prof. Gil Kalai & Prof. Yosef Rinott, HUJI, Mar 2019 – Present  
 - Studying statistical aspects of Google’s quantum supremacy demonstration.  
 - One paper accepted to *Statistical Science*, second in progress.
@@ -40,10 +41,8 @@ redirect_from:
 - Statistical analysis of HR and wage data (BI tools, R, SPSS, SAS).  
 - Prepared formal reviews and reports for Knesset and press.
 
----
-
-## Professional Memberships
-
+Professional Memberships
+======
 **Federmann Center for the Study of Rationality**, HUJI, Oct 2018 – Present  
 - Interdisciplinary research center focused on Game Theory and Rationality.
 
