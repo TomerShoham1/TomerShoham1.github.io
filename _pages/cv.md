@@ -11,7 +11,7 @@ redirect_from:
 
 ## Education
 
-**PhD in Computer Science**, The Hebrew University of Jerusalem, April 2022  
+**PhD in Computer Science**, The Hebrew University of Jerusalem, 2027 (expected) 
 - Statistical analysis and differential privacy.  
 - Advisors: Prof. Katrina Ligett (CS) & Prof. Yosef Rinott (Statistics & Data Science).
 
@@ -24,7 +24,7 @@ redirect_from:
 - Graduated with honors; Dean’s honor list (2016-2018).
 
 ---
-
+## Work Experience
 **Research Assistant**, Prof. Gil Kalai & Prof. Yosef Rinott, HUJI, Mar 2019 – Present  
 - Studying statistical aspects of Google’s quantum supremacy demonstration.  
 - One paper accepted to *Statistical Science*, second in progress.
@@ -50,31 +50,16 @@ redirect_from:
 **Center for Interdisciplinary Data Science Research (CIDR)**, Oct 2020 – Present
 
 
-
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-[//]: # (Talks)
 
-[//]: # (======)
 
-[//]: # (  <ul>{% for post in site.talks reversed %})
-
-[//]: # (    {% include archive-single-talk-cv.html  %})
-
-[//]: # (  {% endfor %}</ul>)
-  
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-[//]: # (Service and leadership)
 
-[//]: # (======)
-
-[//]: # (* Currently signed in to 43 different slack teams)
