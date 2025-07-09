@@ -7,6 +7,20 @@ author_profile: true
 
 {% include base_path %}
 
+<!--{% for post in site.teaching reversed %}-->
+<!--  {% include archive-single.html %}-->
+<!--{% endfor %}-->
+
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  <div>
+    <h3>{{ post.title }}</h3>
+    <p>
+      <strong>Venue:</strong> {{ post.venue }}<br>
+      <strong>Years taught:</strong> {{ post.years_taught }}<br>
+      <strong>Location:</strong> {{ post.location }}<br>
+      <strong>Type:</strong> {{ post.type }}<br>
+    </p>
+    <p>{{ post.excerpt }}</p>
+    <hr>
+  </div>
 {% endfor %}

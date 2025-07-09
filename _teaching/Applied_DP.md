@@ -1,11 +1,11 @@
 ---
 title: "67518-ِApplied Data Privacy"
 collection: teaching
-type: "Undergraduate course"
+type: "Graduate course"
 permalink: /teaching/Applied_DP
 venue: "The Hebrew University of Jerusalem, CS department"
 date: 2024-11-01
-semester: "Winter semester 2024-2026"
+years_taught: "2024-2025, Winter semester, 2024-2025 Winter semester"
 location: "Jerusalem, Israel"
 ---
 
