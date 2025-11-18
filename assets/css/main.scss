@@ -87,3 +87,58 @@ body {
 .dark-theme-toggle {
   display: none !important;
 }
+
+/* ========================= */
+/* Banner and navigation     */
+/* ========================= */
+
+/* Keep your banner image, just making sure masthead itself is transparent
+   except for the image. If you already have a .masthead rule, just add the
+   background + border lines there. */
+.masthead {
+  background-image: url("/images/header.jpg"); /* your banner */
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  border-bottom: none;
+}
+
+/* Remove the white bar background from the inner wrap + nav */
+.masthead__inner-wrap,
+.greedy-nav {
+  background: transparent !important;
+  box-shadow: none;
+}
+
+/* Center the nav block on the page */
+.masthead__inner-wrap {
+  max-width: 1100px;   /* adjust if you want narrower/wider */
+  margin: 0 auto;      /* center */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Center items inside the nav bar */
+.greedy-nav {
+  justify-content: center; /* instead of space-between */
+}
+
+/* Make site title + menu items white on the banner */
+.greedy-nav .site-title,
+.greedy-nav a,
+.masthead__menu-item > a {
+  color: #ffffff !important;
+}
+
+/* Hover style */
+.greedy-nav a:hover,
+.masthead__menu-item > a:hover {
+  text-decoration: underline;
+}
+
+/* Slightly tweak the title styling */
+.greedy-nav .site-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+}
