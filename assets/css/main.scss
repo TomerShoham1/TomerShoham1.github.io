@@ -40,3 +40,50 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ========================= */
+/* Tomer – custom overrides  */
+/* ========================= */
+
+/* 1. Overall light-blue background (like Moshe’s) */
+body {
+  background-color: #e3f2fd;
+}
+
+/* 2. Header image strip at the top (replace with your own image name) */
+.masthead {
+  background-image: url("/images/header.jpg");  /* put header.jpg in /images/ */
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  border-bottom: none;
+}
+
+.masthead__inner-wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 4.5rem; /* more/less height of visible image */
+  background: transparent;
+}
+
+/* 3. Center page titles and make content column nicer */
+.page__title {
+  text-align: center;
+}
+
+.page__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Optional: center the first H2 on the home page ("Hey there!") */
+.page__content > h2:first-of-type {
+  text-align: center;
+}
+
+/* 4. Hide the light/dark mode toggle (gear icon) */
+/* Try these; if the icon still shows, we can tweak the selector */
+#theme-toggle,
+#mode-toggle,
+.dark-theme-toggle {
+  display: none !important;
+}
