@@ -45,27 +45,65 @@
 /* Tomer – custom overrides  */
 /* ========================= */
 
-/* 1. Overall light-blue background (like Moshe’s) */
+/* 1. Overall light-blue background */
 body {
   background-color: #e3f2fd;
 }
 
-/* 2. Header image strip at the top (replace with your own image name) */
+/* 2. Banner image at the top */
 .masthead {
-  background-image: url("/images/header.jpg");  /* put header.jpg in /images/ */
+  position: relative;
+  background-image: url("/images/header.jpg");  /* make sure this file exists */
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   border-bottom: none;
 }
 
-.masthead__inner-wrap {
-  padding-top: 1.5rem;
-  padding-bottom: 4.5rem; /* more/less height of visible image */
-  background: transparent;
+/* 3. Remove white strip + shadows from header/nav */
+.masthead,
+.masthead::before,
+.masthead__inner-wrap,
+.masthead__inner-wrap::before,
+.masthead .greedy-nav,
+.masthead .greedy-nav::before {
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
-/* 3. Center page titles and make content column nicer */
+/* 4. Center the nav block on the page */
+.masthead__inner-wrap {
+  max-width: 1100px;      /* change if you want wider/narrower */
+  margin: 0 auto;
+  padding: 1.5rem 1rem;   /* vertical + horizontal padding */
+}
+
+/* Center items inside the nav bar */
+.masthead .greedy-nav {
+  justify-content: center;   /* put links in the middle */
+}
+
+/* 5. Make site title + menu items white */
+.masthead .site-title,
+.masthead .greedy-nav a,
+.masthead .masthead__menu-item > a {
+  color: #ffffff !important;
+}
+
+/* Hover style for links in the header */
+.masthead .greedy-nav a:hover,
+.masthead .masthead__menu-item > a:hover {
+  text-decoration: underline;
+}
+
+/* Slightly tweak the site title appearance */
+.masthead .site-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+}
+
+/* 6. Center page titles and content column */
 .page__title {
   text-align: center;
 }
@@ -75,70 +113,14 @@ body {
   margin: 0 auto;
 }
 
-/* Optional: center the first H2 on the home page ("Hey there!") */
+/* Center the first H2 on the home page ("Hey there!") */
 .page__content > h2:first-of-type {
   text-align: center;
 }
 
-/* 4. Hide the light/dark mode toggle (gear icon) */
-/* Try these; if the icon still shows, we can tweak the selector */
+/* 7. Hide any dark-mode toggle icons */
 #theme-toggle,
 #mode-toggle,
 .dark-theme-toggle {
   display: none !important;
-}
-
-/* ========================= */
-/* Banner and navigation     */
-/* ========================= */
-
-/* Keep your banner image, just making sure masthead itself is transparent
-   except for the image. If you already have a .masthead rule, just add the
-   background + border lines there. */
-.masthead {
-  background-image: url("/images/header.jpg"); /* your banner */
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  border-bottom: none;
-}
-
-/* Remove the white bar background from the inner wrap + nav */
-.masthead__inner-wrap,
-.greedy-nav {
-  background: transparent !important;
-  box-shadow: none;
-}
-
-/* Center the nav block on the page */
-.masthead__inner-wrap {
-  max-width: 1100px;   /* adjust if you want narrower/wider */
-  margin: 0 auto;      /* center */
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-/* Center items inside the nav bar */
-.greedy-nav {
-  justify-content: center; /* instead of space-between */
-}
-
-/* Make site title + menu items white on the banner */
-.greedy-nav .site-title,
-.greedy-nav a,
-.masthead__menu-item > a {
-  color: #ffffff !important;
-}
-
-/* Hover style */
-.greedy-nav a:hover,
-.masthead__menu-item > a:hover {
-  text-decoration: underline;
-}
-
-/* Slightly tweak the title styling */
-.greedy-nav .site-title {
-  font-weight: 600;
-  font-size: 1.3rem;
-  letter-spacing: 0.02em;
 }
