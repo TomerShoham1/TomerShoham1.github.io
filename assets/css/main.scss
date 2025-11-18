@@ -50,37 +50,46 @@ body {
   background-color: #e3f2fd;
 }
 
-/* 2. Banner image at the top */
+/* 2. Masthead = dark strip with optional image */
 .masthead {
   position: relative;
-  background-image: url("/images/header.jpg");  /* make sure this file exists */
+  background-color: #071424;              /* dark blue fallback */
+  background-image: url("/images/header.jpg"); /* optional banner image */
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   border-bottom: none;
 }
 
-/* 3. Remove white strip + shadows from header/nav */
-.masthead,
-.masthead::before,
-.masthead__inner-wrap,
-.masthead__inner-wrap::before,
-.masthead .greedy-nav,
-.masthead .greedy-nav::before {
-  background: transparent !important;
-  box-shadow: none !important;
+/* Nice fade from dark header into light body */
+.masthead::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 40px;
+  background: linear-gradient(to bottom,
+                              rgba(7, 20, 36, 0.95),
+                              #e3f2fd);
+  pointer-events: none;
 }
 
-/* 4. Center the nav block on the page */
+/* 3. Header content container */
 .masthead__inner-wrap {
-  max-width: 1100px;      /* change if you want wider/narrower */
+  position: relative;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;   /* vertical + horizontal padding */
+  padding: 1rem 1.5rem 3rem;  /* more bottom padding so image shows */
+  background: transparent;
+  box-shadow: none;
 }
 
-/* Center items inside the nav bar */
+/* 4. Navigation bar inside header */
 .masthead .greedy-nav {
-  justify-content: center;   /* put links in the middle */
+  background: transparent;
+  box-shadow: none;
+  justify-content: center;   /* center links */
 }
 
 /* 5. Make site title + menu items white */
@@ -90,7 +99,7 @@ body {
   color: #ffffff !important;
 }
 
-/* Hover style for links in the header */
+/* Hover style */
 .masthead .greedy-nav a:hover,
 .masthead .masthead__menu-item > a:hover {
   text-decoration: underline;
