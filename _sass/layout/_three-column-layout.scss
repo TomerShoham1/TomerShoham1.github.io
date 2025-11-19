@@ -1,7 +1,7 @@
 .three-column-layout {
   display: flex;
   width: 100%;
-  max-width: 1600px; /* Adjust as needed */
+  max-width: none; /* Removed max-width to allow it to expand */
   margin: 0 auto;
   padding-top: 4em;
 }
@@ -12,10 +12,10 @@
 }
 
 .center-column {
-  flex: 0 0 75%; /* Increased to 75% */
+  flex: 0 0 50%;
   padding: 0 2em;
 }
 
 .right-column {
-  flex: 0 0 0%; /* Effectively removed */
+  flex: 0 0 25%;
 }
