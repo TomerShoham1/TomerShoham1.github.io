@@ -94,8 +94,9 @@
   }
 
   img {
-    max-width: 200px;
-    border-radius: 50%;
+    max-width: 250px; /* Increased image size */
+    height: auto;
+    border-radius: 10px; /* Less rounded corners */
 
     @include breakpoint($large) {
       padding: 5px;
@@ -245,9 +246,9 @@
   }
 
   li {
-    display: inline-block;
+    display: block; /* Stack icons vertically */
     white-space: nowrap;
-    padding: 0 0.5em;
+    margin-bottom: 0.5em; /* Add space between icons */
   }
 
   a {
@@ -255,7 +256,7 @@
     margin-bottom: 5px;
     padding: 5px;
     color: inherit;
-    font-size: 2em;
+    font-size: 2.5em; /* Increased icon size */
     text-decoration: none;
 
     &:hover {
