@@ -1,21 +1,21 @@
 .three-column-layout {
   display: flex;
   width: 100%;
-  max-width: none; /* Removed max-width to allow it to expand */
+  max-width: 1400px; /* Set a generous max-width for the overall layout */
   margin: 0 auto;
   padding-top: 4em;
 }
 
 .left-column {
-  flex: 0 0 25%;
+  flex: 0 0 25%; /* Don't grow, don't shrink, base is 25% */
   padding: 0 2em;
 }
 
 .center-column {
-  flex: 0 0 50%;
+  flex: 1 1 70%; /* Grow and shrink, base is 70% */
   padding: 0 2em;
 }
 
 .right-column {
-  flex: 0 0 25%;
+  flex: 0 0 5%; /* Don't grow, don't shrink, base is 5% */
 }
