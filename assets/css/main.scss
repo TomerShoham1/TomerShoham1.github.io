@@ -103,3 +103,10 @@ a:focus {
 .dark-theme-toggle {
   display: none !important;
 }
+
+/* 7. Hide the hamburger menu button on large screens */
+@media (min-width: 800px) {
+  .greedy-nav button {
+    display: none !important;
+  }
+}
