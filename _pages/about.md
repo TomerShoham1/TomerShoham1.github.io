@@ -1,7 +1,6 @@
 ---
 permalink: /
 #title: "Tomer Shoham"
-excerpt: "About me"
 author_profile: false
 redirect_from: 
   - /about/
