@@ -50,18 +50,18 @@ body {
   background-color: #e3f2fd;
 }
 
-/* 2. Masthead = dark strip with optional image */
+/* 2. Masthead: dark strip with optional banner image */
 .masthead {
   position: relative;
-  background-color: #071424;              /* dark blue fallback */
-  background-image: url("/images/header.jpg"); /* optional banner image */
+  background-color: #071424;                 /* dark blue fallback */
+  background-image: url("/images/header.jpg"); /* banner image (optional) */
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   border-bottom: none;
 }
 
-/* Nice fade from dark header into light body */
+/* Gentle fade from header into body */
 .masthead::after {
   content: "";
   position: absolute;
@@ -75,63 +75,52 @@ body {
   pointer-events: none;
 }
 
-/* 3. Header content container */
+/* 3. Header content container (no white bar) */
 .masthead__inner-wrap {
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem 1.5rem 3rem;  /* more bottom padding so image shows */
-  background: transparent;
-  box-shadow: none;
-}
-
-/* 4. Navigation bar inside header */
-.masthead .greedy-nav {
+  padding: 1rem 1.5rem 3rem;
   background: transparent !important;
   box-shadow: none !important;
-  justify-content: center;   /* center links */
 }
 
-/* 5. Make site title + menu items white and remove white backgrounds */
+/* 4. Navigation bar: remove white background everywhere */
+.masthead .greedy-nav,
+.masthead .greedy-nav::before,
+.masthead .greedy-nav .visible-links,
+.masthead .greedy-nav .hidden-links {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 5. Make site title + menu items white */
 .masthead .site-title,
 .masthead .greedy-nav a,
-.masthead .masthead__menu-item > a,
-.masthead .greedy-nav .visible-links a,
-.masthead .greedy-nav .hidden-links a {
+.masthead .masthead__menu-item > a {
   color: #ffffff !important;
   background: transparent !important;
 }
 
 /* Hover style for nav items */
-.masthead .greedy-nav .visible-links a:hover,
-.masthead .greedy-nav .hidden-links a:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  text-decoration: none;
+.masthead .greedy-nav a:hover,
+.masthead .masthead__menu-item > a:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
-/* Hamburger button (when menu collapses) */
+/* Hamburger button (for small screens) */
 .masthead .greedy-nav button {
   background: transparent !important;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #ffffff !important;
 }
 
-.masthead .greedy-nav button:hover {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-}
-
-/* Dropdown menu background (when using hamburger) */
+/* Dropdown menu when hamburger is open */
 .masthead .greedy-nav .hidden-links {
-  background-color: #071424;
+  background-color: #071424 !important;
   border-radius: 4px;
-}
-
-/* Slightly tweak the site title appearance */
-.masthead .site-title {
-  font-weight: 600;
-  font-size: 1.3rem;
-  letter-spacing: 0.02em;
 }
 
 /* 6. Center page titles and content column */
@@ -149,16 +138,13 @@ body {
   text-align: center;
 }
 
-/* 7. Make the left sidebar sticky on desktop so it doesn't scroll away */
-@media (min-width: 1024px) {
-  .sidebar {
-    position: sticky;
-    top: 4.5rem;        /* roughly the height of the header */
-    align-self: flex-start;
-  }
+/* 7. Remove sticky behavior from sidebar (back to default scrolling) */
+.sidebar {
+  position: static;
+  top: auto;
 }
 
-/* 8. Hide any dark-mode toggle icons */
+/* 8. Hide any dark-mode toggle icons (if still present) */
 #theme-toggle,
 #mode-toggle,
 .dark-theme-toggle {
