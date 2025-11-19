@@ -9,7 +9,8 @@
 }
 
 .publication-details > div {
-  margin-bottom: 0.5rem; /* Add space between each line */
+  display: block; /* Ensure each element takes its own line */
+  margin-bottom: 0.75rem; /* Increased space between each line */
 }
 
 .publication-title {
@@ -30,6 +31,7 @@
 .arxiv-logo {
   width: 50px;
   height: auto;
+  margin-top: 0.5rem; /* Add some space above the logo */
 }
 
 .publication-separator {
