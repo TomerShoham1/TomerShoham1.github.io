@@ -1,14 +1,14 @@
 <div class="publication-item">
   <div class="publication-details">
-    <h3 class="publication-title"><b>{{ post.title }}</b></h3>
-    <p class="publication-authors">With: {{ post.authors }}</p>
-    <p class="publication-venue">
+    <div class="publication-title"><b>{{ post.title }}</b></div>
+    <div class="publication-authors">With: {{ post.authors }}</div>
+    <div class="publication-venue">
       {% if post.venue contains "arXiv" %}
         Preprint
       {% else %}
         Accepted to {{ post.venue }}
       {% endif %}
-    </p>
+    </div>
     <div class="publication-links">
       {% if post.paperurl %}
         <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
@@ -18,3 +18,4 @@
     </div>
   </div>
 </div>
+<hr class="publication-separator">

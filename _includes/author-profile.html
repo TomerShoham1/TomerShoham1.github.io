@@ -14,16 +14,17 @@
     {% endif %}
   </div>
 
-  <div class="author__urls-wrapper">
+  <div class="author__content">
+    <h3 class="author__name">{{ author.name }}</h3>
     <ul class="author__urls social-icons">
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i></a></li>
+        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar-square" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a></li>
       {% endif %}
     </ul>
   </div>

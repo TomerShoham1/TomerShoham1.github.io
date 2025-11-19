@@ -1,26 +1,40 @@
+.publication-year {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
 .publication-item {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.publication-details > div {
+  margin-bottom: 0.5rem; /* Add space between each line */
 }
 
 .publication-title {
   font-size: 1.2rem;
-  margin-bottom: 0.25rem;
 }
 
 .publication-authors {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 0.25rem;
 }
 
 .publication-venue {
   font-size: 1rem;
   font-style: italic;
   color: #555;
-  margin-bottom: 0.5rem;
 }
 
 .arxiv-logo {
   width: 50px;
   height: auto;
+}
+
+.publication-separator {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 2rem 0;
 }
