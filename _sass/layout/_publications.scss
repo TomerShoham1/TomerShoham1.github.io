@@ -1,21 +1,9 @@
 /*
-  Publication Section Heading
-*/
-.publication-section-title {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.5rem;
-}
-
-/*
   Container for a single publication entry
 */
 .publication-entry {
-  margin-bottom: 2rem; /* Space after the entry */
-  padding-bottom: 2rem; /* Space before the separator line */
+  margin-bottom: 1rem; /* Reduced space after the entry */
+  padding-bottom: 1rem; /* Reduced space before the separator line */
   border-bottom: 1px solid #eee; /* Separator line */
 }
 
@@ -25,7 +13,7 @@
 */
 .publication-entry > div {
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem !important; /* Significantly reduced space between lines */
 }
 
 .publication-title {
@@ -60,4 +48,16 @@
 .arxiv-logo {
   width: 50px;
   height: auto;
+}
+
+/*
+  Publication Section Heading
+*/
+.publication-section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem; /* Reduced space below section title */
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
 }

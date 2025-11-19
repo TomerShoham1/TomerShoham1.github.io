@@ -61,7 +61,7 @@ body {
 }
 
 .page__content {
-  max-width: 900px;
+  /* Removed max-width to allow content to expand to 50% column width */
   margin: 0 auto;
 }
 
