@@ -16,24 +16,23 @@
   }
 }
 
-.page {
-  max-width: 800px;
-  margin: 0 auto;
+.main-content-wrapper {
+  display: flex;
+}
 
-  .page__inner-wrap {
-    @include full();
+.sidebar-wrapper {
+  flex: 0 0 300px; /* Adjust the width of the sidebar as needed */
+}
 
-    .page__content,
-    .page__meta,
-    .page__share {
-      @include full();
-    }
-  }
+.archive {
+  flex: 1;
+  padding-left: 2em; /* Add some space between the sidebar and the content */
 }
 
 .page__title {
   margin-top: 0;
   line-height: 1;
+  padding-top: 2em; /* Add padding to push the title down */
 
   & + .page__meta {
     margin-top: -0.5em;
