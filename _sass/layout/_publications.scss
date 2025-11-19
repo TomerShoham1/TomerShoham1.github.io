@@ -1,0 +1,56 @@
+.publication-item {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.publication-image {
+  flex: 0 0 150px;
+  margin-right: 1.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}
+
+.publication-details {
+  flex: 1;
+}
+
+.publication-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.publication-authors {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.publication-venue {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.publication-links {
+  a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: var(--global-link-color);
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}

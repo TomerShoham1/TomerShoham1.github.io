@@ -1,0 +1,22 @@
+<div class="publication-item">
+  <div class="publication-image">
+    <img src="{{ site.baseurl }}/images/{{ post.image }}" alt="{{ post.title }}">
+  </div>
+  <div class="publication-details">
+    <h3 class="publication-title">{{ post.title }}</h3>
+    <p class="publication-authors">{{ post.authors }}</p>
+    <p class="publication-venue">{{ post.venue }}, {{ post.year }}</p>
+    <div class="publication-links">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-pdf"></i> Paper
+        </a>
+      {% endif %}
+      {% if post.codeurl %}
+        <a href="{{ post.codeurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-code"></i> Code
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
