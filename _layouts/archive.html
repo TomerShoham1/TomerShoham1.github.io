@@ -2,16 +2,9 @@
 layout: default
 ---
 
-<div class="layout-wrapper">
-  <aside class="sidebar">
-    {% include sidebar.html %}
-  </aside>
-  <main id="main" class="main-content" role="main">
-    <div class="archive">
-      {% if page.title %}
-        <h1 class="page__title">{{ page.title }}</h1>
-      {% endif %}
-      {{ content }}
-    </div>
-  </main>
+<div class="archive">
+  {% if page.title %}
+    <h1 class="page__title">{{ page.title }}</h1>
+  {% endif %}
+  {{ content }}
 </div>
