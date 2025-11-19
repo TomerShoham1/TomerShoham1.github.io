@@ -8,12 +8,12 @@ permalink: /publications/
 
 ### Journal papers
 
-{% bibliography -f papers -q journal %}
+{% bibliography --query @*[keywords~=journal] %}
 
 ### Conference papers
 
-{% bibliography -f papers -q conference %}
+{% bibliography --query @*[keywords~=conference] %}
 
 ### Preprints
 
-{% bibliography -f papers -q preprint %}
+{% bibliography --query @*[keywords~=preprint] %}

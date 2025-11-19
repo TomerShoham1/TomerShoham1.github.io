@@ -310,6 +310,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bib
+  sort_by: year
+  order: descending
+
 
 # Mimic GitHub Pages with --safe
 whitelist:
