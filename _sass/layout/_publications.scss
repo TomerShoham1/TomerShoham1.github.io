@@ -1,37 +1,23 @@
 /*
-  Publication Year Heading
-*/
-.publication-year {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/*
   Container for a single publication entry
 */
-.publication-item {
-  padding-bottom: 1.5rem; /* Space before the separator */
-  margin-bottom: 1.5rem;  /* Space after the separator */
-  border-bottom: 1px solid #eee; /* The separator line */
+.publication-entry {
+  margin-bottom: 2rem; /* Space after the entry */
+  padding-bottom: 2rem; /* Space before the separator line */
+  border-bottom: 1px solid #eee; /* Separator line */
 }
 
 /*
-  This is a highly specific rule to override any conflicting theme styles.
-  It forces each direct child of .publication-details to be a block
-  with a bottom margin, creating the required new lines and spacing.
+  This rule ensures each part of the publication is on its own line
+  and has consistent spacing.
 */
-.publication-details > div {
-  display: block !important;
-  margin-bottom: 0.75rem !important;
+.publication-entry > div {
+  display: block;
+  margin-bottom: 0.75rem;
 }
 
 .publication-title {
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .publication-authors {

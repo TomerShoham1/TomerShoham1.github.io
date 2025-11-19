@@ -8,27 +8,38 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="bibliography-item">
-      <h2 class="bibliography-title">
+    
+    {% if post.collection == 'publications' %}
+      <div class="publication-entry">
+        <div class="publication-title"><b>{{ title }}</b></div>
+        <div class="publication-authors">With: {{ post.authors }}</div>
+        <div class="publication-venue">
+          {% if post.venue contains "arXiv" %}
+            Preprint
+          {% else %}
+            Accepted to {{ post.venue }}
+          {% endif %}
+        </div>
+        <div class="publication-links">
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
+              <img src="{{ site.baseurl }}/images/arxiv-logo.png" alt="arXiv" class="arxiv-logo">
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    {% else %}
+      <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
-          <a href="{{ post.link }}">{{ title }}</a>
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
         {% else %}
           <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
         {% endif %}
       </h2>
-      <p class="bibliography-authors">{{ post.citation }}</p>
-      <p class="bibliography-venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-      <div class="bibliography-links">
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" class="bibliography-link"><i class="fas fa-file-pdf"></i> PDF</a>
-        {% endif %}
-        {% if post.slidesurl %}
-          <a href="{{ post.slidesurl }}" class="bibliography-link"><i class="fas fa-file-powerpoint"></i> Slides</a>
-        {% endif %}
-        {% if post.bibtexurl %}
-          <a href="{{ post.bibtexurl }}" class="bibliography-link"><i class="fas fa-book"></i> BibTeX</a>
-        {% endif %}
-      </div>
-    </div>
+      {% if post.excerpt %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% endif %}
+    {% endif %}
+
   </article>
 </div>
