@@ -53,9 +53,8 @@ body {
   background-color: #e3f2fd;
 }
 
-/* 2. Center page titles and content column */
+/* 2. Page titles */
 .page__title {
-  text-align: center;
   font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -64,15 +63,6 @@ body {
 .page__content {
   max-width: 900px;
   margin: 0 auto;
-}
-
-/* Center the first H2 on the home page ("Hey there!") */
-.page__content > h2:first-of-type {
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-top: 0.4rem;
-  margin-bottom: 1.5rem;
 }
 
 /* 3. Slightly nicer body text */
