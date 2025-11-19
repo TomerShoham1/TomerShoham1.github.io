@@ -8,14 +8,11 @@
   margin-bottom: 1.5rem;
 }
 
-/* Force each part of the publication entry to be a block on its own line */
-.publication-title,
-.publication-authors,
-.publication-venue,
-.publication-links {
-  display: block;
-  width: 100%; /* Ensure they take up the full width */
-  margin-bottom: 0.75rem; /* Add clear spacing between lines */
+/* Use Flexbox to force vertical stacking */
+.publication-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* This creates space between each item */
 }
 
 .publication-title {
@@ -37,7 +34,6 @@
 .arxiv-logo {
   width: 50px;
   height: auto;
-  margin-top: 0.5rem; /* Add some space above the logo */
 }
 
 .publication-separator {
