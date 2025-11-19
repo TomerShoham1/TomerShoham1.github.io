@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ## Hey there!
-I am a Ph.D. Student for Computer Science, studying at the Hebrew University of Jerusalem. I have a Bachelor's degree in Statistics and Economy, and a Master's degree in Statistics. My Master's Thesis, Asking the Proper Question: Adjusting Queries to Statistical Procedures Under Differential Privacy focuses on differential privacy and statistical tests. I'm probably the only CS student who doesn't know how to code in Python, but I know R, and I love it.
+I am a Ph.D. Student for Computer Science, studying at the Hebrew University of Jerusalem. I have a Bachelor's degree in Statistics and Economy, and a Master's degree in Statistics. I'm probably the only CS student who doesn't know how to code in Python, but I know R, and I love it.
 
 ## P.h.D research
 My research lies at the intersection of differential privacy and statistics, focusing on adapting classical statistical procedures to the constraints of differential privacy. This includes developing private methods for non-parametric confidence intervals based on resampling procedures, ratio estimation (odds ratio, relative risk) with associated confidence intervals, and CDF estimation. Adding noise to things is my guilty pleasure.
