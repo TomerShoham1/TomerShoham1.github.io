@@ -11,6 +11,9 @@
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
+  /* Override the default container max-width */
+  max-width: none !important;
+
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
@@ -368,7 +371,7 @@
   margin: 0;
 
   a {
-    text-decoration: none;
+    color: inherit;
   }
 }
 
