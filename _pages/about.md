@@ -1,13 +1,13 @@
 ---
 permalink: /
-#title: "Tomer Shoham"
+layout: archive
+title: "About Me"
 author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-## Hey, my name is Tomer
 I am a Ph.D. Student for Computer Science, studying at the Hebrew University of Jerusalem. I have a Bachelor's degree in Statistics and Economy, and a Master's degree in Statistics. I'm probably the only CS student who doesn't know how to code in Python, but I know R, and I love it.
 
 ## P.h.D research
@@ -16,4 +16,3 @@ My PhD advisors are Katrina Ligett (CS department) and Yosef Rinott (Statistics 
 
 ## Other Research Interests
 I'm also a Research Assistant of Prof. Gil Kalai at at the Reichman University, Herzliya, where I work on statistical aspects of experimenting with quantum computers, and mainly on the Google supremacy claim made in 2019. We have a line of papers- you are welcome to check them out on my publications page.
-

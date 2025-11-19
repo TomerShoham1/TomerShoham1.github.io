@@ -5,14 +5,19 @@
 }
 
 .publication-item {
-  margin-bottom: 1.5rem;
+  padding-bottom: 2rem; /* Add padding to the bottom of the item */
+  border-bottom: 1px solid #ddd; /* Add a solid line at the bottom */
+  margin-bottom: 2rem; /* Add margin to the bottom of the item */
 }
 
-/* Use Flexbox to force vertical stacking */
-.publication-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem; /* This creates space between each item */
+/*
+  This is a highly specific rule to override any conflicting theme styles.
+  It forces each direct child div of .publication-details to be a block
+  with a bottom margin, creating the required new lines and spacing.
+*/
+.publication-details > div {
+  display: block !important;
+  margin-bottom: 0.75rem !important;
 }
 
 .publication-title {
@@ -34,11 +39,4 @@
 .arxiv-logo {
   width: 50px;
   height: auto;
-}
-
-.publication-separator {
-  border: 0;
-  height: 1px;
-  background: #eee;
-  margin: 2rem 0;
 }
