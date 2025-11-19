@@ -12,12 +12,36 @@
     {% if post.collection == 'publications' %}
       <div class="publication-entry">
         <div class="publication-title"><b>{{ title }}</b></div>
-        <div class="publication-authors">With: {{ post.authors }}</div>
+        
+        {% comment %} Reformat authors from "Last, First and Last, First" to "First Last, First Last, and First Last" {% endcomment %}
+        {% assign author_list = post.authors | split: " and " %}
+        {% assign formatted_authors = "" %}
+        {% for author_name in author_list %}
+          {% assign parts = author_name | split: ", " %}
+          {% if parts.size == 2 %}
+            {% assign first_name = parts[1] %}
+            {% assign last_name = parts[0] %}
+            {% assign current_formatted_name = first_name | append: " " | append: last_name %}
+          {% else %}
+            {% assign current_formatted_name = author_name %}
+          {% endif %}
+
+          {% if forloop.first %}
+            {% assign formatted_authors = current_formatted_name %}
+          {% elsif forloop.last %}
+            {% assign formatted_authors = formatted_authors | append: ", and " | append: current_formatted_name %}
+          {% else %}
+            {% assign formatted_authors = formatted_authors | append: ", " | append: current_formatted_name %}
+          {% endif %}
+        {% endfor %}
+        <div class="publication-authors">With: {{ formatted_authors }}</div>
+
         <div class="publication-venue">
           {% if post.keywords contains "preprint" %}
             Preprint
           {% else %}
             Accepted to {{ post.venue }}
+            {% if post.year %}, {{ post.year }}{% endif %}
           {% endif %}
         </div>
         <div class="publication-links">

@@ -12,10 +12,10 @@
 }
 
 .center-column {
-  flex: 0 0 50%; /* This should be 50% */
+  flex: 0 0 75%; /* Increased to 75% */
   padding: 0 2em;
 }
 
 .right-column {
-  flex: 0 0 25%;
+  flex: 0 0 0%; /* Effectively removed */
 }
