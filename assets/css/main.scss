@@ -51,6 +51,8 @@
 /* 1. Overall light-blue background */
 body {
   background-color: #e3f2fd;
+  max-width: none !important; /* Force body to expand */
+  width: 100% !important;     /* Force body to expand */
 }
 
 /* 2. Page titles */
