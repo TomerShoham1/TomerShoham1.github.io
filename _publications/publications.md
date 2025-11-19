@@ -4,67 +4,72 @@ title: "Publications"
 permalink: /publications/
 ---
 
-## Papers
+# Publications
 
-### Journal Papers
+My full publications list can be found on my [Google Scholar profile](https://scholar.google.com/citations?user=DZjDk8UAAAAJ&hl=en).
 
----
+## Journal Papers
 
-**Maternal exposure to particulate matter early in pregnancy and congenital anomalies in offspring: Analysis of concentration-response relationships in a population-based cohort with follow-up throughout childhood**  
+<div class="pub-entry">
+<b>Maternal exposure to particulate matter early in pregnancy and congenital anomalies in offspring</b>  
 With: Ronit Nirel, Tomer Shoham, Ran Rotem, Wiessam Abu Ahmad, Gideon Koren, Itai Kloog, Rachel Golan, Hagai Levine  
-Accepted to: *Science of The Total Environment* (2023), vol. 880, p. 163082.
-[link](https://www.sciencedirect.com/science/article/abs/pii/S0048969723017011)
----
+<i>Accepted to Science of the Total Environment (2023)</i>  
+<a class="pub-link" href="https://doi.org/10.1016/j.scitotenv.2023.163082">↗ Link</a>
+</div>
 
-**Statistical aspects of the quantum supremacy demonstration**  
+<div class="pub-entry">
+<b>Statistical aspects of the quantum supremacy demonstration</b>  
 With: Yosef Rinott, Tomer Shoham, Gil Kalai  
-Accepted to: *Statistical Science* (2022), vol. 37(3), pp. 322–347.
-[link](https://projecteuclid.org/journals/statistical-science/volume-37/issue-3/Statistical-Aspects-of-the-Quantum-Supremacy-Demonstration/10.1214/21-STS836.pdf)
----
-
-### Conference Papers
+<i>Accepted to Statistical Science (2022)</i>  
+<a class="pub-link" href="https://projecteuclid.org/journals/statistical-science/volume-37/issue-3/Statistical-Aspects-of-the-Quantum-Supremacy-Demonstration/10.1214/21-STS842.full">↗ Link</a>
+</div>
 
 ---
 
-**Asking the proper question: Adjusting queries to statistical procedures under differential privacy**  
+## Conference Papers
+
+<div class="pub-entry">
+<b>Asking the proper question: Adjusting queries to statistical procedures under differential privacy</b>  
 With: Tomer Shoham, Yosef Rinott  
-Accepted to: *International Conference on Privacy in Statistical Databases (PSD)*, Springer LNCS (2022), pp. 46–61.
-[link](https://link.springer.com/chapter/10.1007/978-3-031-13945-1_4)
----
-
-### Preprints
+<i>Accepted to PSD 2022 (Springer LNCS)</i>  
+<a class="pub-link" href="https://arxiv.org/abs/2203.00001">↗ arXiv</a>
+</div>
 
 ---
 
-**Differentially private ratio statistics**  
+## Preprints
+
+<div class="pub-entry">
+<b>Differentially private ratio statistics</b>  
 With: Tomer Shoham, Katrina Ligett  
-Preprint: arXiv:2505.20351 (2025).  
-[arXiv link](https://arxiv.org/abs/2505.20351)
+<i>Preprint (2025)</i>  
+<a class="pub-link" href="https://arxiv.org/abs/2505.20351">↗ arXiv</a>
+</div>
 
----
-
-**Black-Box Differentially Private Nonparametric Confidence Intervals Under Minimal Assumptions**  
+<div class="pub-entry">
+<b>Black-Box Differentially Private Nonparametric Confidence Intervals Under Minimal Assumptions</b>  
 With: Tomer Shoham, Moshe Shenfeld, Noa Velner-Harris, Katrina Ligett  
-Preprint: arXiv:2511.01303 (2025).  
-[arXiv link](https://arxiv.org/abs/2511.01303)
+<i>Preprint (2025)</i>  
+<a class="pub-link" href="https://arxiv.org/abs/2511.01303">↗ arXiv</a>
+</div>
 
----
-
-**Random Circuit Sampling: Fourier Expansion and Statistics**  
+<div class="pub-entry">
+<b>Random Circuit Sampling: Fourier Expansion and Statistics</b>  
 With: Gil Kalai, Yosef Rinott, Tomer Shoham  
-Preprint: arXiv:2404.00935 (2024).  
-[arXiv link](https://arxiv.org/abs/2404.00935)
+<i>Preprint (2024)</i>  
+<a class="pub-link" href="https://arxiv.org/abs/2404.00935">↗ arXiv</a>
+</div>
 
----
-
-**Questions and Concerns About Google’s Quantum Supremacy Claim**  
+<div class="pub-entry">
+<b>Questions and Concerns About Google’s Quantum Supremacy Claim</b>  
 With: Gil Kalai, Yosef Rinott, Tomer Shoham  
-Preprint: arXiv:2305.01064 (2023).  
-[arXiv link](https://arxiv.org/abs/2305.01064)
+<i>Preprint (2023)</i>  
+<a class="pub-link" href="https://arxiv.org/abs/2305.01064">↗ arXiv</a>
+</div>
 
----
-
-**Google’s Quantum Supremacy Claim: Data, Documentation, and Discussion**  
+<div class="pub-entry">
+<b>Google’s Quantum Supremacy Claim: Data, Documentation, and Discussion</b>  
 With: Gil Kalai, Yosef Rinott, Tomer Shoham  
-Preprint: arXiv:2210.12753 (2022).  
-[arXiv link](https://arxiv.org/abs/2210.12753)
+<i>Preprint (2022)</i>  
+<a class="pub-link" href="https://arxiv.org/abs/2210.12753">↗ arXiv</a>
+</div>
