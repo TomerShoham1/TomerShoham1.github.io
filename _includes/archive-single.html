@@ -14,7 +14,7 @@
         <div class="publication-title"><b>{{ title }}</b></div>
         <div class="publication-authors">With: {{ post.authors }}</div>
         <div class="publication-venue">
-          {% if post.venue contains "arXiv" %}
+          {% if post.keywords contains "preprint" %}
             Preprint
           {% else %}
             Accepted to {{ post.venue }}
@@ -22,9 +22,15 @@
         </div>
         <div class="publication-links">
           {% if post.paperurl %}
-            <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
-              <img src="{{ site.baseurl }}/images/arxiv-logo.png" alt="arXiv" class="arxiv-logo">
-            </a>
+            {% if post.keywords contains "preprint" %}
+              <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
+                <img src="{{ site.baseurl }}/images/arxiv-logo.png" alt="arXiv" class="arxiv-logo">
+              </a>
+            {% else %}
+              <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-pdf"></i> Paper
+              </a>
+            {% endif %}
           {% endif %}
         </div>
       </div>

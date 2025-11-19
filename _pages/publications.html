@@ -6,12 +6,30 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap" style="margin-bottom: 2rem;">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
 {% include base_path %}
 
-{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
-{% for post in sorted_pubs %}
-  {% include archive-single.html %}
+{% assign publications_by_year = site.publications | sort: 'date' | reverse %}
+
+<h2 class="publication-section-title">Journal Papers</h2>
+{% for post in publications_by_year %}
+  {% if post.keywords contains "journal" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="publication-section-title">Conference Papers</h2>
+{% for post in publications_by_year %}
+  {% if post.keywords contains "conference" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="publication-section-title">Preprint Papers</h2>
+{% for post in publications_by_year %}
+  {% if post.keywords contains "preprint" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}

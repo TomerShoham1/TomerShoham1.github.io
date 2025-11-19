@@ -1,4 +1,16 @@
 /*
+  Publication Section Heading
+*/
+.publication-section-title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/*
   Container for a single publication entry
 */
 .publication-entry {
@@ -29,6 +41,20 @@
   font-size: 1rem;
   font-style: italic;
   color: #555;
+}
+
+.publication-links a {
+  text-decoration: none;
+  color: var(--global-link-color);
+  font-weight: bold;
+}
+
+.publication-links a:hover {
+  text-decoration: underline;
+}
+
+.publication-links i {
+  margin-right: 0.5rem;
 }
 
 .arxiv-logo {
