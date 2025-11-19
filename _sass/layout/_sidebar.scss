@@ -25,7 +25,7 @@
   }
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(3 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -94,7 +94,7 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 200px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -129,7 +129,7 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 }
 
 .sidebar .author__desktop {
