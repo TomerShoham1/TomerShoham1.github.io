@@ -35,6 +35,7 @@
     "layout/page",
     "layout/archive",
     "layout/sidebar",
+    "layout/bibliography",
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
@@ -109,106 +110,4 @@ a:focus {
   .greedy-nav button {
     display: none !important;
   }
-}
-
-/* ========================= */
-/* Publications styling      */
-/* ========================= */
-
-/* Headings inside publications page */
-.page__content h2 {
-  font-size: 1.5rem;
-  margin-top: 2.2rem;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-}
-
-.page__content h3 {
-  font-size: 1.2rem;
-  margin-top: 1.8rem;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
-}
-
-/* Numbered list: [1], [2], ... and hanging indent */
-ol.bibliography {
-  counter-reset: pub;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ol.bibliography li {
-  position: relative;
-  padding-left: 3rem;       /* space for [1] */
-  margin-bottom: 0.7rem;
-  line-height: 1.6;
-}
-
-ol.bibliography li::before {
-  counter-increment: pub;
-  content: "[" counter(pub) "] ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-weight: 600;
-}
-
-/* Make titles/venues look like the CV */
-.bibliography .title {
-  font-style: italic;
-}
-
-.bibliography .journal,
-.bibliography .booktitle {
-  font-style: italic;
-}
-
-/* Slightly reduce link “noise” inside citations */
-.bibliography a {
-  text-decoration: none;
-}
-
-.bibliography a:hover {
-  text-decoration: underline;
-}
-
-/* Publication entry block */
-.pub-entry {
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
-  margin-bottom: 1rem;
-}
-
-/* Title */
-.pub-entry b {
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
-/* Authors */
-.pub-entry {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* Venue line */
-.pub-entry i {
-  display: block;
-  margin-top: 0.3rem;
-  font-style: italic;
-  color: #2a4f6d;
-  font-size: 1.05rem;
-}
-
-/* Link */
-.pub-link {
-  display: inline-block;
-  margin-top: 0.3rem;
-  font-weight: 600;
-  color: #0a3d62 !important;
-}
-
-.pub-link:hover {
-  text-decoration: underline;
 }
