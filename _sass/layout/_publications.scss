@@ -8,13 +8,19 @@
   margin-bottom: 1.5rem;
 }
 
-.publication-details > div {
-  display: block; /* Ensure each element takes its own line */
-  margin-bottom: 0.75rem; /* Increased space between each line */
+/* Force each part of the publication entry to be a block on its own line */
+.publication-title,
+.publication-authors,
+.publication-venue,
+.publication-links {
+  display: block;
+  width: 100%; /* Ensure they take up the full width */
+  margin-bottom: 0.75rem; /* Add clear spacing between lines */
 }
 
 .publication-title {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .publication-authors {
