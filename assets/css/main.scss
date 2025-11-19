@@ -50,82 +50,12 @@ body {
   background-color: #e3f2fd;
 }
 
-/* 2. Masthead: dark strip with optional banner image */
-.masthead {
-  position: relative;
-  background-color: #071424;                 /* dark blue fallback */
-  background-image: url("/images/header.jpg"); /* banner image (optional) */
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  border-bottom: none;
-}
-
-/* Gentle fade from header into body */
-.masthead::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 40px;
-  background: linear-gradient(to bottom,
-                              rgba(7, 20, 36, 0.95),
-                              #e3f2fd);
-  pointer-events: none;
-}
-
-/* 3. Header content container (no white bar) */
-.masthead__inner-wrap {
-  position: relative;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem 3rem;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* 4. Navigation bar: remove white background everywhere */
-.masthead .greedy-nav,
-.masthead .greedy-nav::before,
-.masthead .greedy-nav .visible-links,
-.masthead .greedy-nav .hidden-links {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* 5. Make site title + menu items white */
-.masthead .site-title,
-.masthead .greedy-nav a,
-.masthead .masthead__menu-item > a {
-  color: #ffffff !important;
-  background: transparent !important;
-}
-
-/* Hover style for nav items */
-.masthead .greedy-nav a:hover,
-.masthead .masthead__menu-item > a:hover {
-  text-decoration: underline;
-  background-color: rgba(255, 255, 255, 0.12) !important;
-}
-
-/* Hamburger button (for small screens) */
-.masthead .greedy-nav button {
-  background: transparent !important;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  color: #ffffff !important;
-}
-
-/* Dropdown menu when hamburger is open */
-.masthead .greedy-nav .hidden-links {
-  background-color: #071424 !important;
-  border-radius: 4px;
-}
-
-/* 6. Center page titles and content column */
+/* 2. Center page titles and content column */
 .page__title {
   text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .page__content {
@@ -136,15 +66,38 @@ body {
 /* Center the first H2 on the home page ("Hey there!") */
 .page__content > h2:first-of-type {
   text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
-/* 7. Remove sticky behavior from sidebar (back to default scrolling) */
-.sidebar {
-  position: static;
-  top: auto;
+/* 3. Slightly nicer body text */
+.page__content p {
+  line-height: 1.7;
+  font-size: 1.02rem;
 }
 
-/* 8. Hide any dark-mode toggle icons (if still present) */
+/* 4. Section headings */
+.page__content h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+/* 5. Links color (site-wide) */
+a {
+  color: #1e88e5;
+}
+
+a:hover,
+a:focus {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+/* 6. Hide any dark-mode toggle icons */
 #theme-toggle,
 #mode-toggle,
 .dark-theme-toggle {
