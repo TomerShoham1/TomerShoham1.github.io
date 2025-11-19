@@ -1,18 +1,27 @@
+/*
+  Publication Year Heading
+*/
 .publication-year {
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
+/*
+  Container for a single publication entry
+*/
 .publication-item {
-  padding-bottom: 2rem; /* Add padding to the bottom of the item */
-  border-bottom: 1px solid #ddd; /* Add a solid line at the bottom */
-  margin-bottom: 2rem; /* Add margin to the bottom of the item */
+  padding-bottom: 1.5rem; /* Space before the separator */
+  margin-bottom: 1.5rem;  /* Space after the separator */
+  border-bottom: 1px solid #eee; /* The separator line */
 }
 
 /*
   This is a highly specific rule to override any conflicting theme styles.
-  It forces each direct child div of .publication-details to be a block
+  It forces each direct child of .publication-details to be a block
   with a bottom margin, creating the required new lines and spacing.
 */
 .publication-details > div {

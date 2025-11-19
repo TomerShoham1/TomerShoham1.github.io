@@ -1,11 +1,7 @@
 ---
 permalink: /
-layout: archive
+layout: single
 title: "About Me"
-author_profile: false
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 I am a Ph.D. Student for Computer Science, studying at the Hebrew University of Jerusalem. I have a Bachelor's degree in Statistics and Economy, and a Master's degree in Statistics. I'm probably the only CS student who doesn't know how to code in Python, but I know R, and I love it.
