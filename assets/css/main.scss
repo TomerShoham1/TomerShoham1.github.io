@@ -63,8 +63,15 @@ body {
 }
 
 .page__content {
-  /* Removed max-width to allow content to expand to 50% column width */
-  margin: 0 auto;
+  max-width: 820px;
+}
+
+.center-column .page {
+  float: none;
+  width: 100%;
+  max-width: 820px;
+  margin: 0;
+  padding: 0;
 }
 
 /* 3. Slightly nicer body text */
