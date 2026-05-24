@@ -48,11 +48,11 @@
           {% if post.paperurl %}
             {% if post.keywords contains "preprint" %}
               <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
-                <img src="{{ site.baseurl }}/images/arxiv-logo.png" alt="arXiv" class="arxiv-logo">
+                arXiv
               </a>
             {% else %}
               <a href="{{ post.paperurl }}" class="publication-link" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-file-pdf"></i> Paper
+                Paper
               </a>
             {% endif %}
           {% endif %}

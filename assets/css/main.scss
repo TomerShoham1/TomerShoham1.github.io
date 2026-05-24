@@ -69,6 +69,7 @@ body {
   max-width: var(--site-content-max-width);
   margin: 0;
   padding: 0;
+  font-size: 0.95rem;
 }
 
 .center-column .list__item {
@@ -80,9 +81,12 @@ body {
 }
 
 /* 3. Slightly nicer body text */
-.page__content p {
+.page__content p,
+.page__content li,
+.page__content dl {
   line-height: 1.7;
-  font-size: 1.02rem;
+  font-size: 0.95rem;
+  text-align: justify;
 }
 
 /* 4. Section headings */
