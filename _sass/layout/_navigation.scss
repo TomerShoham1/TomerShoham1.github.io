@@ -32,8 +32,12 @@
     grid-column: 1;
     min-width: 0;
     padding: 0 var(--site-column-padding);
+    text-align: center;
 
     a {
+      display: inline-block;
+      font-size: 1.2rem;
+      line-height: 1.1;
       margin-left: 0;
       margin-right: 0;
       font-weight: 700;
