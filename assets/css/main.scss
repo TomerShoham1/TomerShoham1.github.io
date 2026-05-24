@@ -62,16 +62,21 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.page__content {
-  max-width: 820px;
-}
-
-.center-column .page {
+.center-column .page,
+.center-column .archive {
   float: none;
   width: 100%;
-  max-width: 820px;
+  max-width: var(--site-content-max-width);
   margin: 0;
   padding: 0;
+}
+
+.center-column .list__item {
+  padding-right: 0;
+}
+
+.center-column .page__content {
+  max-width: none;
 }
 
 /* 3. Slightly nicer body text */
