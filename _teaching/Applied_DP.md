@@ -1,7 +1,8 @@
 ---
-title: "67518-ِApplied Data Privacy"
+title: "67518 - Applied Data Privacy"
 collection: teaching
 type: "Graduate course"
+teaching_order: 2
 permalink: /teaching/Applied_DP
 venue: "The Hebrew University of Jerusalem, CS department"
 date: 2024-11-01
@@ -17,20 +18,19 @@ The course consisted of weekly lectures and in-class assignments, completed usin
 
 Course Topics:
 ======
-- Attacks on Privacy: 
+- Attacks on Privacy:
   - K-anonymity, l-diversity, t-closeness
   - Reconstruction attacks (Naive, linear regression, linear programming)
   - Hypothesis testing and Membership inference attacks
   - Classical Auditing
 
-- DP and Basic Mechanisms: 
+- DP and Basic Mechanisms:
   - Noise addition mechanisms, ReportNoisyMax, AboveThreshold, Exponential Mechanism
 
-- Private Mechine Learning: 
+- Private Mechine Learning:
   - Memorization, overfitting, and the connection to differential privacy
   - DP, DP-SGD, for logistic regression, and neural networks
   - One run auditing
 
-- Synthetic Database Generation: 
-  - SmallDB, MWEM, marginal queries 
-
+- Synthetic Database Generation:
+  - SmallDB, MWEM, marginal queries

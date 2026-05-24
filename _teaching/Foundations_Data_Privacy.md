@@ -1,7 +1,8 @@
 ---
-title: "67508-Foundations of Data Privacy"
+title: "67508 - Foundations of Data Privacy"
 collection: teaching
 type: "Undergraduate and graduate course"
+teaching_order: 1
 permalink: /teaching/Foundations_Data_Privacy
 venue: "The Hebrew University of Jerusalem, CS department"
 date: 2026-10-12
