@@ -25,6 +25,9 @@
           {% else %}
             {% assign current_formatted_name = author_name %}
           {% endif %}
+          {% if current_formatted_name == "Tomer Shoham" %}
+            {% assign current_formatted_name = '<strong class="publication-self">Tomer Shoham</strong>' %}
+          {% endif %}
 
           {% if forloop.first %}
             {% assign formatted_authors = current_formatted_name %}

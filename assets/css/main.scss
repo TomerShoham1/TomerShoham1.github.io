@@ -45,12 +45,12 @@
 ;
 
 /* ========================= */
-/* Tomer – custom overrides  */
+/* Tomer - custom overrides  */
 /* ========================= */
 
 /* 1. Overall light-blue background */
 body {
-  background-color: #e3f2fd;
+  background-color: #edf7fc;
   max-width: none !important; /* Force body to expand */
   width: 100% !important;     /* Force body to expand */
 }
@@ -85,6 +85,164 @@ body {
   color: #5f7586;
   font-size: 0.92rem;
   font-style: italic;
+}
+
+.research-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.research-kicker {
+  margin: 0 0 0.25rem !important;
+  color: #4f46e5;
+  font-size: 0.86rem !important;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: left !important;
+}
+
+.research-lead {
+  margin: 0 !important;
+  color: #263443;
+  font-size: 1.05rem !important;
+  line-height: 1.55 !important;
+  text-align: left !important;
+}
+
+.cv-download,
+.sidebar-cv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border: 1px solid #3159d5;
+  border-radius: 6px;
+  background: #3f5be8;
+  color: #fff !important;
+  font-family: $sans-serif;
+  font-weight: 700;
+  text-decoration: none !important;
+  box-shadow: 0 8px 18px rgba(63, 91, 232, 0.18);
+}
+
+.cv-download {
+  flex: 0 0 auto;
+  padding: 0.7rem 1rem;
+}
+
+.sidebar-cv-button {
+  margin-top: 0.9rem;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.cv-download:hover,
+.cv-download:focus,
+.sidebar-cv-button:hover,
+.sidebar-cv-button:focus {
+  background: #2645c8;
+  color: #fff !important;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 0;
+}
+
+.research-tags span {
+  border: 1px solid #bdd5e6;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.52);
+  color: #33566f;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.education-card {
+  display: flex;
+  gap: 0.75rem;
+  min-height: 104px;
+  padding: 1rem;
+  border: 1px solid #d7e5ee;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 22px rgba(38, 70, 96, 0.08);
+}
+
+.education-card i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ebe9ff;
+  color: #4f46e5;
+}
+
+.education-card strong,
+.education-card span {
+  display: block;
+  text-align: left;
+}
+
+.education-card strong {
+  color: #243345;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.education-card span {
+  margin-top: 0.25rem;
+  color: #657d8f;
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.selected-publications {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.selected-publication {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #cfe0ea;
+}
+
+.selected-publication a,
+.selected-publication span {
+  display: block;
+  color: #233244;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.selected-publication a:hover,
+.selected-publication a:focus {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.selected-publication small {
+  display: block;
+  margin-top: 0.25rem;
+  color: #6f8494;
+  font-size: 0.84rem;
 }
 
 /* 3. Slightly nicer body text */
@@ -126,5 +284,19 @@ a:focus {
 @media (min-width: 800px) {
   .greedy-nav button {
     display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .research-summary {
+    display: block;
+  }
+
+  .cv-download {
+    margin-top: 1rem;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
   }
 }
