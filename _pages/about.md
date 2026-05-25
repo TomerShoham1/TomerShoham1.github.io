@@ -7,13 +7,8 @@ author_profile: true
 
 <div class="research-summary">
   <div>
-    <p class="research-kicker">Ph.D. student in computer science</p>
     <p class="research-lead">I am a Ph.D. student in Computer Science at the Hebrew University of Jerusalem. I work at the intersection of differential privacy, statistics, and private data analysis, focusing on adapting classical statistical procedures to privacy constraints. I'm probably the only CS student who doesn't know how to code in Python, but I know R, and I love it.</p>
   </div>
-  <a class="cv-download" href="/files/Tomer_Shoham_CV.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
-    Download CV
-  </a>
 </div>
 
 ## Research
