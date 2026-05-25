@@ -1,10 +1,10 @@
 ---
 permalink: /
 layout: single
+title: "Hey, my name is Tomer"
 author_profile: true
 ---
 
-## Hey, my name is Tomer
 <div class="research-summary">
   <div>
     <p class="research-kicker">Ph.D. student in computer science</p>
@@ -40,14 +40,16 @@ My research includes developing private methods for non-parametric confidence in
     <i class="fas fa-graduation-cap" aria-hidden="true"></i>
     <div>
       <strong>Master's degree in Statistics</strong>
-      <span>Statistical inference and data analysis</span>
+      <span>Hebrew University of Jerusalem</span>
+      <span>Magna cum laude</span>
     </div>
   </div>
   <div class="education-card">
     <i class="fas fa-graduation-cap" aria-hidden="true"></i>
     <div>
       <strong>Bachelor's degree in Statistics and Economics</strong>
-      <span>Statistics, probability, and economics</span>
+      <span>Hebrew University of Jerusalem</span>
+      <span>Magna cum laude</span>
     </div>
   </div>
 </div>
