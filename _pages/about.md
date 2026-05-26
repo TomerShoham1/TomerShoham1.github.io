@@ -14,6 +14,9 @@ author_profile: true
 ## Ph.D. research
 My research includes developing private methods for non-parametric confidence intervals based on resampling procedures, ratio estimation (odds ratio, relative risk) with associated confidence intervals, and CDF estimation. Adding noise to things is my guilty pleasure. My PhD advisors are Katrina Ligett (CS department) and Yosef Rinott (Statistics department).
 
+### Other Research Interests
+I'm also a Research Assistant of Prof. Gil Kalai, where I work on statistical aspects of experimenting with quantum computers, mainly on the Google supremacy claim made in 2019. We have a line of papers, and you are welcome to check them out on my publications page.
+
 <div class="research-tags" aria-label="Research areas">
   <span>Differential privacy</span>
   <span>Statistical inference</span>
@@ -21,9 +24,6 @@ My research includes developing private methods for non-parametric confidence in
   <span>Resampling methods</span>
   <span>Quantum Computing</span>
 </div>
-
-### Other Research Interests
-I'm also a Research Assistant of Prof. Gil Kalai, where I work on statistical aspects of experimenting with quantum computers, mainly on the Google supremacy claim made in 2019. We have a line of papers, and you are welcome to check them out on my publications page.
 
 ## Education
 <div class="education-grid">
